@@ -1,0 +1,13 @@
+C:\Users\Jzhang\Desktop\Projects\burrito-bot\myproject\bin\Debug\netcoreapp3.1\myproject.exe
+C:\Users\Jzhang\Desktop\Projects\burrito-bot\myproject\bin\Debug\netcoreapp3.1\myproject.deps.json
+C:\Users\Jzhang\Desktop\Projects\burrito-bot\myproject\bin\Debug\netcoreapp3.1\myproject.runtimeconfig.json
+C:\Users\Jzhang\Desktop\Projects\burrito-bot\myproject\bin\Debug\netcoreapp3.1\myproject.runtimeconfig.dev.json
+C:\Users\Jzhang\Desktop\Projects\burrito-bot\myproject\bin\Debug\netcoreapp3.1\myproject.dll
+C:\Users\Jzhang\Desktop\Projects\burrito-bot\myproject\bin\Debug\netcoreapp3.1\myproject.pdb
+C:\Users\Jzhang\Desktop\Projects\burrito-bot\myproject\obj\Debug\netcoreapp3.1\myproject.csprojAssemblyReference.cache
+C:\Users\Jzhang\Desktop\Projects\burrito-bot\myproject\obj\Debug\netcoreapp3.1\myproject.AssemblyInfoInputs.cache
+C:\Users\Jzhang\Desktop\Projects\burrito-bot\myproject\obj\Debug\netcoreapp3.1\myproject.AssemblyInfo.cs
+C:\Users\Jzhang\Desktop\Projects\burrito-bot\myproject\obj\Debug\netcoreapp3.1\myproject.csproj.CoreCompileInputs.cache
+C:\Users\Jzhang\Desktop\Projects\burrito-bot\myproject\obj\Debug\netcoreapp3.1\myproject.dll
+C:\Users\Jzhang\Desktop\Projects\burrito-bot\myproject\obj\Debug\netcoreapp3.1\myproject.pdb
+C:\Users\Jzhang\Desktop\Projects\burrito-bot\myproject\obj\Debug\netcoreapp3.1\myproject.genruntimeconfig.cache
