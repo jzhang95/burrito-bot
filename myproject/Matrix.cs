@@ -5,12 +5,6 @@ namespace MatrixType
     class Matrix
     {
         Random rng = new Random();
-
-        public int columns
-        { get; set; }
-
-        public int rows 
-        { get; set; }
         
         public int[,] mat
         { get; set; }
@@ -18,8 +12,6 @@ namespace MatrixType
 
         public Matrix(int rows, int columns)
         {
-            this.rows = rows;
-            this.columns = columns;
             this.mat = new int[rows, columns];
 
             for(int i = 0; i < this.mat.GetLength(0); i++)
@@ -34,8 +26,6 @@ namespace MatrixType
 
         public Matrix(int[,] matrix)
         {
-            this.rows = matrix.GetLength(0);
-            this.columns = matrix.GetLength(1);
             this.mat = matrix;
         }
 
@@ -51,5 +41,55 @@ namespace MatrixType
             }
         }
 
+        public Matrix dotProduct(Matrix mat2)
+        {
+            int[,] result = new int[this.mat.GetLength(0), mat2.mat.GetLength(1)];
+            int[] curRow;
+            int[] curCol;
+
+            for(int i = 0; i < this.mat.GetLength(0); i++)
+            {
+                curRow = dpGetRows(i);
+                for(int j = 0; j < mat2.mat.GetLength(1); j++)
+                {
+                    curCol = dpGetCols(j, mat2);
+                    result[i,j] = calcProduct(curRow, curCol);
+                }
+            }
+            
+            return new Matrix(result);
+        }
+
+        public int calcProduct(int[] row, int[] col)
+        {
+            int result = 0;
+
+            for(int i = 0; i < row.Length; i++)
+            {
+                result += row[i] * col[i];
+            }
+
+            return result;
+        }
+
+        public int[] dpGetRows(int rowNum)
+        {
+            int[] result = new int[this.mat.GetLength(1)];
+            for(int i = 0; i < result.Length; i++)
+            {
+                result[i] = this.mat[rowNum, i];
+            }
+            return result;
+        }
+
+        public int[] dpGetCols(int colNum, Matrix mat2)
+        {
+            int[] result = new int[mat2.mat.GetLength(0)];
+            for(int i = 0; i < result.Length; i++)
+            {
+                result[i] = mat2.mat[i, colNum];
+            }
+            return result;
+        }
     }
 }

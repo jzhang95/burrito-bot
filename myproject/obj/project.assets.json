@@ -8,26 +8,24 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Jzhang\\.nuget\\packages\\": {}
+    "C:\\Users\\jzhan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jzhang\\Desktop\\Projects\\burrito-bot\\myproject\\myproject.csproj",
+      "projectUniqueName": "C:\\Users\\jzhan\\Desktop\\projects\\burrito-bot\\myproject\\myproject.csproj",
       "projectName": "myproject",
-      "projectPath": "C:\\Users\\Jzhang\\Desktop\\Projects\\burrito-bot\\myproject\\myproject.csproj",
-      "packagesPath": "C:\\Users\\Jzhang\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jzhang\\Desktop\\Projects\\burrito-bot\\myproject\\obj\\",
+      "projectPath": "C:\\Users\\jzhan\\Desktop\\projects\\burrito-bot\\myproject\\myproject.csproj",
+      "packagesPath": "C:\\Users\\jzhan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jzhan\\Desktop\\projects\\burrito-bot\\myproject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jzhang\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\jzhan\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -58,7 +56,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
