@@ -4,7 +4,7 @@ namespace MatrixType
 {
     class Matrix
     {
-        Random rng = new Random();
+        private Random rng = new Random();
         
         public int[,] mat
         { get; set; }
@@ -41,11 +41,76 @@ namespace MatrixType
             }
         }
 
+ 
+        public Matrix matSum(Matrix mat2)
+        {
+            int[,] result = new int[this.mat.GetLength(0), mat2.mat.GetLength(1)];
+
+            if(this.mat.GetLength(0) != result.GetLength(0) || this.mat.GetLength(1) != result.GetLength(1))
+            {
+                Console.WriteLine("Matrices must be same size");
+                return null;
+            }
+                
+
+            for(int i = 0; i < this.mat.GetLength(0); i++) 
+            {
+                for(int j = 0; j < this.mat.GetLength(1); j++)
+                {
+                    result[i,j] = this.mat[i,j] + mat2.mat[i,j];
+                }
+            }
+            
+            return new Matrix(result);
+        }
+
+        public Matrix matSubtract(Matrix mat2)
+        {
+            int[,] result = new int[this.mat.GetLength(0), mat2.mat.GetLength(1)];
+
+            if(this.mat.GetLength(0) != result.GetLength(0) || this.mat.GetLength(1) != result.GetLength(1))
+            {
+                Console.WriteLine("Matrices must be same size");
+                return null;
+            }
+
+            for(int i = 0; i < this.mat.GetLength(0); i++) 
+            {
+                for(int j = 0; j < this.mat.GetLength(1); j++)
+                {
+                    result[i,j] = this.mat[i,j] - mat2.mat[i,j];
+                }
+            }
+            
+            return new Matrix(result);
+        }
+
+         public Matrix matScale(int num)
+        {
+            int[,] result = new int[this.mat.GetLength(0), this.mat.GetLength(1)];
+
+            for(int i = 0; i < this.mat.GetLength(0); i++) 
+            {
+                for(int j = 0; j < this.mat.GetLength(1); j++)
+                {
+                    result[i,j] = this.mat[i,j] * num;
+                }
+            }
+            
+            return new Matrix(result);
+        }
+
         public Matrix dotProduct(Matrix mat2)
         {
             int[,] result = new int[this.mat.GetLength(0), mat2.mat.GetLength(1)];
             int[] curRow;
             int[] curCol;
+            
+            if(this.mat.GetLength(1) != mat2.mat.GetLength(0))
+            {
+                Console.WriteLine("This matrix must have same cols and Matrix B rows");
+                return null;
+            }
 
             for(int i = 0; i < this.mat.GetLength(0); i++)
             {
